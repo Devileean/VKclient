@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dt8-8C-fpQ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AuthorizationVC-->
+        <scene sceneID="WRv-9T-09g">
+            <objects>
+                <viewController id="dt8-8C-fpQ" customClass="AuthorizationVC" customModule="VKclient" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ivl-ky-fFR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k5a-eg-Xmg">
+                                <rect key="frame" x="4" y="46" width="406" height="814"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c8W-gj-5yR">
+                                        <rect key="frame" x="0.0" y="0.0" width="406" height="128"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="tOV-dk-unG">
+                                                <rect key="frame" x="0.0" y="0.0" width="406" height="128"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="tOV-dk-unG" firstAttribute="leading" secondItem="c8W-gj-5yR" secondAttribute="leading" id="42k-sw-30j"/>
+                                            <constraint firstAttribute="trailing" secondItem="tOV-dk-unG" secondAttribute="trailing" id="EFN-RS-Jsk"/>
+                                            <constraint firstItem="tOV-dk-unG" firstAttribute="top" secondItem="c8W-gj-5yR" secondAttribute="top" id="Ew4-ue-Tw7"/>
+                                            <constraint firstAttribute="height" constant="128" id="cVH-b0-hN5"/>
+                                            <constraint firstAttribute="bottom" secondItem="tOV-dk-unG" secondAttribute="bottom" id="xwi-d6-ecI"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Телефон или email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="syJ-t7-Zu7">
+                                        <rect key="frame" x="8" y="138" width="390" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="0.30775123830000001" green="0.48157638310000001" blue="0.74518519640000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Телефон или email:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YXe-Rr-h8A">
+                                        <rect key="frame" x="8" y="172" width="390" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8YQ-LT-dFu">
+                                        <rect key="frame" x="8" y="218" width="390" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="0.30775123830000001" green="0.48157638310000001" blue="0.74518519640000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SyV-Dn-Wbx">
+                                        <rect key="frame" x="8" y="252" width="390" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPH-Ql-gxB">
+                                        <rect key="frame" x="8" y="302" width="390" height="34.5"/>
+                                        <color key="backgroundColor" red="0.30775123830000001" green="0.48157638310000001" blue="0.74518519640000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Войти">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2W-nM-R0R">
+                                        <rect key="frame" x="126.5" y="348.5" width="153.5" height="34.5"/>
+                                        <color key="tintColor" red="0.30775123830000001" green="0.48157638310000001" blue="0.74518519640000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Забыли пароль?">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Впервые ВКонтакте?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBV-CM-44d">
+                                        <rect key="frame" x="8" y="423" width="390" height="21"/>
+                                        <color key="tintColor" systemColor="tintColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.51010792530000004" green="0.51010792530000004" blue="0.51010792530000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XL5-sl-IXe">
+                                        <rect key="frame" x="8" y="494" width="390" height="34.5"/>
+                                        <color key="backgroundColor" red="0.293387711" green="0.70233595370000002" blue="0.29582113030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Зарегистрироваться">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOi-Ge-XFz">
+                                        <rect key="frame" x="8" y="536.5" width="390" height="31"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="883-Vw-AaX"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.30775123830000001" green="0.48157638310000001" blue="0.74518519640000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Войти через Google"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nKD-3o-P8P">
+                                        <rect key="frame" x="8" y="575.5" width="390" height="31"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.30775123830000001" green="0.48157638310000001" blue="0.74518519640000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Войти через Facebook"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Логинов Алексей" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1X-y7-GQP">
+                                        <rect key="frame" x="8" y="766.5" width="390" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.30775123830000001" green="0.48157638310000001" blue="0.74518519640000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="c8W-gj-5yR" secondAttribute="trailing" id="09K-I7-KeE"/>
+                                    <constraint firstItem="c8W-gj-5yR" firstAttribute="leading" secondItem="k5a-eg-Xmg" secondAttribute="leading" id="4Yf-gJ-upQ"/>
+                                    <constraint firstItem="8YQ-LT-dFu" firstAttribute="leading" secondItem="k5a-eg-Xmg" secondAttribute="leading" constant="8" id="6jj-Mz-2Bg"/>
+                                    <constraint firstItem="XL5-sl-IXe" firstAttribute="top" secondItem="qBV-CM-44d" secondAttribute="bottom" constant="50" id="9WW-pN-Bvk"/>
+                                    <constraint firstItem="YXe-Rr-h8A" firstAttribute="top" secondItem="syJ-t7-Zu7" secondAttribute="bottom" constant="10" id="Blh-U1-UG0"/>
+                                    <constraint firstAttribute="trailing" secondItem="qBV-CM-44d" secondAttribute="trailing" constant="8" id="DuA-d3-1h3"/>
+                                    <constraint firstItem="YXe-Rr-h8A" firstAttribute="leading" secondItem="k5a-eg-Xmg" secondAttribute="leading" constant="8" id="GjX-Ic-wqC"/>
+                                    <constraint firstItem="J2W-nM-R0R" firstAttribute="centerX" secondItem="k5a-eg-Xmg" secondAttribute="centerX" id="IGi-0E-dAg"/>
+                                    <constraint firstItem="syJ-t7-Zu7" firstAttribute="leading" secondItem="k5a-eg-Xmg" secondAttribute="leading" constant="8" id="JaH-ei-S33"/>
+                                    <constraint firstAttribute="trailing" secondItem="syJ-t7-Zu7" secondAttribute="trailing" constant="8" id="L23-u2-7Nq"/>
+                                    <constraint firstAttribute="trailing" secondItem="EPH-Ql-gxB" secondAttribute="trailing" constant="8" id="MIj-1D-5sL"/>
+                                    <constraint firstItem="EPH-Ql-gxB" firstAttribute="leading" secondItem="k5a-eg-Xmg" secondAttribute="leading" constant="8" id="N5H-0G-ebl"/>
+                                    <constraint firstAttribute="bottom" secondItem="h1X-y7-GQP" secondAttribute="bottom" constant="26.5" id="NGb-9H-Ey6"/>
+                                    <constraint firstAttribute="trailing" secondItem="nKD-3o-P8P" secondAttribute="trailing" constant="8" id="OUD-Xv-6RT"/>
+                                    <constraint firstItem="SyV-Dn-Wbx" firstAttribute="top" secondItem="8YQ-LT-dFu" secondAttribute="bottom" constant="10" id="Sgg-Z7-3rn"/>
+                                    <constraint firstItem="EPH-Ql-gxB" firstAttribute="top" secondItem="SyV-Dn-Wbx" secondAttribute="bottom" constant="16" id="U9h-aP-ugy"/>
+                                    <constraint firstItem="XL5-sl-IXe" firstAttribute="leading" secondItem="k5a-eg-Xmg" secondAttribute="leading" constant="8" id="UFr-xx-z1W"/>
+                                    <constraint firstAttribute="trailing" secondItem="SyV-Dn-Wbx" secondAttribute="trailing" constant="8" id="WAo-Bo-tcn"/>
+                                    <constraint firstItem="syJ-t7-Zu7" firstAttribute="top" secondItem="tOV-dk-unG" secondAttribute="bottom" constant="10" id="YR1-Zl-TnI"/>
+                                    <constraint firstItem="c8W-gj-5yR" firstAttribute="centerX" secondItem="k5a-eg-Xmg" secondAttribute="centerX" id="YpH-Gj-bBC"/>
+                                    <constraint firstItem="tOi-Ge-XFz" firstAttribute="leading" secondItem="k5a-eg-Xmg" secondAttribute="leading" constant="8" id="bya-vA-xYV"/>
+                                    <constraint firstAttribute="trailing" secondItem="8YQ-LT-dFu" secondAttribute="trailing" constant="8" id="c2y-3N-kdX"/>
+                                    <constraint firstItem="nKD-3o-P8P" firstAttribute="leading" secondItem="k5a-eg-Xmg" secondAttribute="leading" constant="8" id="cqF-4t-KsS"/>
+                                    <constraint firstItem="tOi-Ge-XFz" firstAttribute="top" secondItem="XL5-sl-IXe" secondAttribute="bottom" constant="8" id="e9g-F8-flk"/>
+                                    <constraint firstAttribute="trailing" secondItem="h1X-y7-GQP" secondAttribute="trailing" constant="8" id="fFz-Er-lU1"/>
+                                    <constraint firstAttribute="trailing" secondItem="YXe-Rr-h8A" secondAttribute="trailing" constant="8" id="fdT-7y-q60"/>
+                                    <constraint firstItem="h1X-y7-GQP" firstAttribute="leading" secondItem="k5a-eg-Xmg" secondAttribute="leading" constant="8" id="gsT-H3-pXc"/>
+                                    <constraint firstItem="qBV-CM-44d" firstAttribute="leading" secondItem="k5a-eg-Xmg" secondAttribute="leading" constant="8" id="kdE-Dm-ME1"/>
+                                    <constraint firstItem="nKD-3o-P8P" firstAttribute="top" secondItem="tOi-Ge-XFz" secondAttribute="bottom" constant="8" id="krJ-do-hHo"/>
+                                    <constraint firstItem="h1X-y7-GQP" firstAttribute="top" secondItem="nKD-3o-P8P" secondAttribute="bottom" constant="160" id="mdy-G2-sVo"/>
+                                    <constraint firstAttribute="trailing" secondItem="tOi-Ge-XFz" secondAttribute="trailing" constant="8" id="nFK-wz-CZT"/>
+                                    <constraint firstItem="c8W-gj-5yR" firstAttribute="top" secondItem="k5a-eg-Xmg" secondAttribute="top" id="nWU-ZT-8rl"/>
+                                    <constraint firstItem="8YQ-LT-dFu" firstAttribute="top" secondItem="YXe-Rr-h8A" secondAttribute="bottom" constant="12" id="oUd-fs-Z8G"/>
+                                    <constraint firstItem="SyV-Dn-Wbx" firstAttribute="leading" secondItem="k5a-eg-Xmg" secondAttribute="leading" constant="8" id="trQ-YP-pWX"/>
+                                    <constraint firstItem="qBV-CM-44d" firstAttribute="top" secondItem="J2W-nM-R0R" secondAttribute="bottom" constant="40" id="vf1-RN-YUM"/>
+                                    <constraint firstAttribute="trailing" secondItem="XL5-sl-IXe" secondAttribute="trailing" constant="8" id="y8u-W7-A7z"/>
+                                    <constraint firstItem="J2W-nM-R0R" firstAttribute="top" secondItem="EPH-Ql-gxB" secondAttribute="bottom" constant="12" id="zBM-Ni-oyN"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="D2I-9v-TwA"/>
+                        <color key="backgroundColor" red="0.30775123830000001" green="0.48157638310000001" blue="0.74518519640000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="D2I-9v-TwA" firstAttribute="trailing" secondItem="k5a-eg-Xmg" secondAttribute="trailing" constant="4" id="6t1-NC-9AY"/>
+                            <constraint firstItem="k5a-eg-Xmg" firstAttribute="leading" secondItem="D2I-9v-TwA" secondAttribute="leading" constant="4" id="O3S-Qj-qF1"/>
+                            <constraint firstItem="k5a-eg-Xmg" firstAttribute="top" secondItem="D2I-9v-TwA" secondAttribute="top" constant="2" id="gST-VO-NdA"/>
+                            <constraint firstItem="D2I-9v-TwA" firstAttribute="bottom" secondItem="k5a-eg-Xmg" secondAttribute="bottom" constant="2" id="xjT-WI-1aQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v4b-X0-3di" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="186.95652173913044" y="-1.3392857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="800" height="400"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
