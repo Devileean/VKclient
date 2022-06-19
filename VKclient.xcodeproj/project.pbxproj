@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4921887D285F614900787FF2 /* FriendsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4921887C285F614900787FF2 /* FriendsVC.swift */; };
+		4921887F285F61BC00787FF2 /* MyGroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4921887E285F61BC00787FF2 /* MyGroupsVC.swift */; };
 		49E792722856519E00632D60 /* AuthorizationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E792712856519E00632D60 /* AuthorizationVC.swift */; };
 		49F94D9D28564DC500DB82D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F94D9C28564DC500DB82D2 /* AppDelegate.swift */; };
 		49F94D9F28564DC500DB82D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F94D9E28564DC500DB82D2 /* SceneDelegate.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4921887C285F614900787FF2 /* FriendsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsVC.swift; sourceTree = "<group>"; };
+		4921887E285F61BC00787FF2 /* MyGroupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupsVC.swift; sourceTree = "<group>"; };
 		49E792712856519E00632D60 /* AuthorizationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationVC.swift; sourceTree = "<group>"; };
 		49F94D9928564DC500DB82D2 /* VKclient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKclient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49F94D9C28564DC500DB82D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +45,8 @@
 			isa = PBXGroup;
 			children = (
 				49E792712856519E00632D60 /* AuthorizationVC.swift */,
+				4921887C285F614900787FF2 /* FriendsVC.swift */,
+				4921887E285F61BC00787FF2 /* MyGroupsVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -171,7 +177,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				49F94D9D28564DC500DB82D2 /* AppDelegate.swift in Sources */,
+				4921887F285F61BC00787FF2 /* MyGroupsVC.swift in Sources */,
 				49F94D9F28564DC500DB82D2 /* SceneDelegate.swift in Sources */,
+				4921887D285F614900787FF2 /* FriendsVC.swift in Sources */,
 				49E792722856519E00632D60 /* AuthorizationVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
