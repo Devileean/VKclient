@@ -200,20 +200,62 @@
                         <viewLayoutGuide key="safeArea" id="l4x-qR-NWs"/>
                         <color key="backgroundColor" red="0.30775123830000001" green="0.48157638310000001" blue="0.74518519640000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="l4x-qR-NWs" firstAttribute="trailing" secondItem="qfJ-hm-esB" secondAttribute="trailing" constant="4" id="91O-iR-Fsq"/>
                             <constraint firstItem="qfJ-hm-esB" firstAttribute="top" secondItem="l4x-qR-NWs" secondAttribute="top" id="HNp-Rc-0jy"/>
                             <constraint firstItem="swh-N0-NzG" firstAttribute="top" secondItem="qfJ-hm-esB" secondAttribute="bottom" id="MBE-92-Pb5"/>
                             <constraint firstItem="qfJ-hm-esB" firstAttribute="leading" secondItem="l4x-qR-NWs" secondAttribute="leading" constant="4" id="Y0c-ni-gYp"/>
-                            <constraint firstAttribute="trailing" secondItem="qfJ-hm-esB" secondAttribute="trailing" constant="4" id="cW6-Wi-uR3"/>
                             <constraint firstItem="l4x-qR-NWs" firstAttribute="bottom" secondItem="swh-N0-NzG" secondAttribute="bottom" id="dtK-6X-tQr"/>
                             <constraint firstItem="l4x-qR-NWs" firstAttribute="trailing" secondItem="swh-N0-NzG" secondAttribute="trailing" constant="4" id="lr4-AW-j6B"/>
                             <constraint firstItem="swh-N0-NzG" firstAttribute="leading" secondItem="l4x-qR-NWs" secondAttribute="leading" constant="4" id="uk3-my-v1P"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="мои Группы" id="tem-nT-QUw"/>
+                    <navigationItem key="navigationItem" title="мои Группы" id="tem-nT-QUw">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="globe" catalog="system" id="ttC-vc-HRz">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="R7f-ve-ILo" kind="show" id="TCo-oP-Aau"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qr8-kc-elf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3347.826086956522" y="-7.3660714285714279"/>
+            <point key="canvasLocation" x="3248" y="2"/>
+        </scene>
+        <!--все Группы-->
+        <scene sceneID="99n-Az-b5w">
+            <objects>
+                <viewController id="R7f-ve-ILo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FLl-NV-MDH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="TPv-Yh-4JZ">
+                                <rect key="frame" x="4" y="108" width="406" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Urv-2E-ojw">
+                                <rect key="frame" x="4" y="159" width="406" height="654"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5f2-p0-30j"/>
+                        <color key="backgroundColor" red="0.30775123830000001" green="0.48157638310000001" blue="0.74518519640000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5f2-p0-30j" firstAttribute="trailing" secondItem="Urv-2E-ojw" secondAttribute="trailing" constant="4" id="0cF-Ae-bhv"/>
+                            <constraint firstItem="TPv-Yh-4JZ" firstAttribute="leading" secondItem="5f2-p0-30j" secondAttribute="leading" constant="4" id="17w-tu-cth"/>
+                            <constraint firstItem="5f2-p0-30j" firstAttribute="bottom" secondItem="Urv-2E-ojw" secondAttribute="bottom" id="MPZ-Ma-F3z"/>
+                            <constraint firstItem="TPv-Yh-4JZ" firstAttribute="top" secondItem="5f2-p0-30j" secondAttribute="top" id="Ngb-h4-6mq"/>
+                            <constraint firstItem="Urv-2E-ojw" firstAttribute="top" secondItem="TPv-Yh-4JZ" secondAttribute="bottom" id="d4w-B3-A8p"/>
+                            <constraint firstItem="Urv-2E-ojw" firstAttribute="leading" secondItem="5f2-p0-30j" secondAttribute="leading" constant="4" id="klH-9L-Va3"/>
+                            <constraint firstItem="5f2-p0-30j" firstAttribute="trailing" secondItem="TPv-Yh-4JZ" secondAttribute="trailing" constant="4" id="tqB-9a-DCk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="все Группы" id="X31-1s-Cvb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xrD-AU-PQx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4989.8550724637689" y="-7.3660714285714279"/>
         </scene>
         <!--Друзья-->
         <scene sceneID="Pbv-Z2-Owr">
@@ -248,7 +290,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pgD-uI-f0g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3347.826086956522" y="-692.41071428571422"/>
+            <point key="canvasLocation" x="3248" y="-692"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="j2z-w4-rkA">
@@ -266,11 +308,28 @@
                     <connections>
                         <segue destination="GRf-Fn-HpH" kind="relationship" relationship="viewControllers" id="LCC-Lf-tvT"/>
                         <segue destination="Y4n-QS-vyI" kind="relationship" relationship="viewControllers" id="YXN-kv-i0K"/>
+                        <segue destination="bSP-9A-DeM" kind="relationship" relationship="viewControllers" id="EnH-Ez-S8m"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5cK-ss-Rj6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1341" y="-331"/>
+        </scene>
+        <!--Новости-->
+        <scene sceneID="LgR-Oe-LBD">
+            <objects>
+                <viewController id="byY-jT-q19" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C0A-Jc-HRD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="5oN-mo-hNk"/>
+                        <color key="backgroundColor" red="0.30775123830000001" green="0.48157638310000001" blue="0.74518519640000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Новости" id="xbB-gg-QvR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NDI-8m-mtv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1368" y="598"/>
         </scene>
         <!--мои Группы-->
         <scene sceneID="5wa-od-lxU">
@@ -295,7 +354,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VcB-sn-3ts" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2437.68115942029" y="-7.3660714285714279"/>
+            <point key="canvasLocation" x="2438" y="-7"/>
         </scene>
         <!--Друзья-->
         <scene sceneID="ydD-bW-cEv">
@@ -326,9 +385,37 @@
             </objects>
             <point key="canvasLocation" x="2437.68115942029" y="-692.41071428571422"/>
         </scene>
+        <!--Новости-->
+        <scene sceneID="CpA-3n-xPE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bSP-9A-DeM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Новости" image="newspaper" catalog="system" selectedImage="newspaper.fill" id="bfX-eM-Jyv"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Nif-7e-RV8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.30775123830000001" green="0.48157638310000001" blue="0.74518519640000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="byY-jT-q19" kind="relationship" relationship="rootViewController" id="C2K-OB-4lF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rhb-cC-ks6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="610" y="598"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="globe" catalog="system" width="128" height="121"/>
         <image name="logo" width="800" height="400"/>
+        <image name="newspaper" catalog="system" width="128" height="111"/>
+        <image name="newspaper.fill" catalog="system" width="128" height="111"/>
         <image name="person.2" catalog="system" width="128" height="81"/>
         <image name="person.2.fill" catalog="system" width="128" height="80"/>
         <image name="person.3" catalog="system" width="128" height="62"/>

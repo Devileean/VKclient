@@ -51,18 +51,18 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		49E7926D2856507C00632D60 /* Model */ = {
+		49E7926D2856507C00632D60 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		49E7926E2856508400632D60 /* View */ = {
+		49E7926E2856508400632D60 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		49E79270285650B400632D60 /* Storyboard */ = {
@@ -94,8 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				49E79270285650B400632D60 /* Storyboard */,
-				49E7926D2856507C00632D60 /* Model */,
-				49E7926E2856508400632D60 /* View */,
+				49E7926D2856507C00632D60 /* Models */,
+				49E7926E2856508400632D60 /* Views */,
 				49E7926C2856505800632D60 /* Controllers */,
 				49F94D9C28564DC500DB82D2 /* AppDelegate.swift */,
 				49F94D9E28564DC500DB82D2 /* SceneDelegate.swift */,
