@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -222,7 +223,7 @@
             </objects>
             <point key="canvasLocation" x="3248" y="2"/>
         </scene>
-        <!--все Группы-->
+        <!--поиск Групп-->
         <scene sceneID="99n-Az-b5w">
             <objects>
                 <viewController id="R7f-ve-ILo" sceneMemberID="viewController">
@@ -251,11 +252,11 @@
                             <constraint firstItem="5f2-p0-30j" firstAttribute="trailing" secondItem="TPv-Yh-4JZ" secondAttribute="trailing" constant="4" id="tqB-9a-DCk"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="все Группы" id="X31-1s-Cvb"/>
+                    <navigationItem key="navigationItem" title="поиск Групп" id="X31-1s-Cvb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xrD-AU-PQx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4989.8550724637689" y="-7.3660714285714279"/>
+            <point key="canvasLocation" x="4090" y="-7"/>
         </scene>
         <!--Друзья-->
         <scene sceneID="Pbv-Z2-Owr">
@@ -272,6 +273,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zbG-FL-9FF">
                                 <rect key="frame" x="4" y="159" width="406" height="654"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <sections/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fwC-9X-dj0"/>
@@ -287,10 +289,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Друзья" id="tHG-rp-4aP"/>
+                    <connections>
+                        <outlet property="friendsSearchBar" destination="RrI-CU-fSj" id="cWV-yE-kLT"/>
+                        <outlet property="friendsTableView" destination="zbG-FL-9FF" id="oXs-BN-mzP"/>
+                        <segue destination="9j8-5l-RCM" kind="show" identifier="segueFriendsFotoCollection" id="8eR-Ca-TyH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pgD-uI-f0g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3248" y="-692"/>
+            <point key="canvasLocation" x="3287" y="-692"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="j2z-w4-rkA">
@@ -409,6 +416,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rhb-cC-ks6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="610" y="598"/>
+        </scene>
+        <!--Friends Foto CollectionVC-->
+        <scene sceneID="bO4-w0-TYv">
+            <objects>
+                <viewController id="9j8-5l-RCM" customClass="FriendsFotoCollectionVC" customModule="VKclient" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Spl-Oz-j2C">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="w1i-g3-Ujf">
+                                <rect key="frame" x="0.0" y="108" width="414" height="705"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0JR-LX-Gm7">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="GaD-uQ-BBK">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Dpp-nT-85f">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bgp-gd-7e9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bgp-gd-7e9" firstAttribute="trailing" secondItem="w1i-g3-Ujf" secondAttribute="trailing" id="E3h-ux-b5N"/>
+                            <constraint firstItem="w1i-g3-Ujf" firstAttribute="leading" secondItem="bgp-gd-7e9" secondAttribute="leading" id="Vkk-oo-5YD"/>
+                            <constraint firstItem="w1i-g3-Ujf" firstAttribute="top" secondItem="bgp-gd-7e9" secondAttribute="top" id="awr-cK-EZE"/>
+                            <constraint firstItem="bgp-gd-7e9" firstAttribute="bottom" secondItem="w1i-g3-Ujf" secondAttribute="bottom" id="qes-Lf-UnM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="GE3-bQ-jB6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rST-GJ-4FR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4241" y="-692"/>
         </scene>
     </scenes>
     <resources>

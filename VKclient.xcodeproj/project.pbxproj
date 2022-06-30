@@ -9,7 +9,16 @@
 /* Begin PBXBuildFile section */
 		4921887D285F614900787FF2 /* FriendsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4921887C285F614900787FF2 /* FriendsVC.swift */; };
 		4921887F285F61BC00787FF2 /* MyGroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4921887E285F61BC00787FF2 /* MyGroupsVC.swift */; };
+		4958890A286E45860044C6C3 /* FriendsFotoCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49588909286E45860044C6C3 /* FriendsFotoCollectionVC.swift */; };
+		49ABE992286E5AD000274536 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ABE991286E5AD000274536 /* UserModel.swift */; };
+		49ABE994286E5CEB00274536 /* GroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ABE993286E5CEB00274536 /* GroupModel.swift */; };
+		49ABE999286E5DAB00274536 /* GroupsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ABE998286E5DAB00274536 /* GroupsStorage.swift */; };
+		49ABE99B286E5E7000274536 /* UserStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ABE99A286E5E7000274536 /* UserStorage.swift */; };
+		49D2A30E286BBDB400129592 /* MyGroupsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D2A30C286BBDB400129592 /* MyGroupsCell.swift */; };
+		49D2A30F286BBDB400129592 /* MyGroupsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49D2A30D286BBDB400129592 /* MyGroupsCell.xib */; };
 		49E792722856519E00632D60 /* AuthorizationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E792712856519E00632D60 /* AuthorizationVC.swift */; };
+		49F4950B28678E3700BB7CB1 /* FriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F4950928678E3700BB7CB1 /* FriendsCell.swift */; };
+		49F4950C28678E3700BB7CB1 /* FriendsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49F4950A28678E3700BB7CB1 /* FriendsCell.xib */; };
 		49F94D9D28564DC500DB82D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F94D9C28564DC500DB82D2 /* AppDelegate.swift */; };
 		49F94D9F28564DC500DB82D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F94D9E28564DC500DB82D2 /* SceneDelegate.swift */; };
 		49F94DA428564DC500DB82D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49F94DA228564DC500DB82D2 /* Main.storyboard */; };
@@ -20,7 +29,16 @@
 /* Begin PBXFileReference section */
 		4921887C285F614900787FF2 /* FriendsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsVC.swift; sourceTree = "<group>"; };
 		4921887E285F61BC00787FF2 /* MyGroupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupsVC.swift; sourceTree = "<group>"; };
+		49588909286E45860044C6C3 /* FriendsFotoCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsFotoCollectionVC.swift; sourceTree = "<group>"; };
+		49ABE991286E5AD000274536 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		49ABE993286E5CEB00274536 /* GroupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupModel.swift; sourceTree = "<group>"; };
+		49ABE998286E5DAB00274536 /* GroupsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsStorage.swift; sourceTree = "<group>"; };
+		49ABE99A286E5E7000274536 /* UserStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStorage.swift; sourceTree = "<group>"; };
+		49D2A30C286BBDB400129592 /* MyGroupsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupsCell.swift; sourceTree = "<group>"; };
+		49D2A30D286BBDB400129592 /* MyGroupsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyGroupsCell.xib; sourceTree = "<group>"; };
 		49E792712856519E00632D60 /* AuthorizationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationVC.swift; sourceTree = "<group>"; };
+		49F4950928678E3700BB7CB1 /* FriendsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsCell.swift; sourceTree = "<group>"; };
+		49F4950A28678E3700BB7CB1 /* FriendsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendsCell.xib; sourceTree = "<group>"; };
 		49F94D9928564DC500DB82D2 /* VKclient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKclient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49F94D9C28564DC500DB82D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49F94D9E28564DC500DB82D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,12 +59,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49588908286E450D0044C6C3 /* FriendsFotoCollectionVC */ = {
+			isa = PBXGroup;
+			children = (
+				49588909286E45860044C6C3 /* FriendsFotoCollectionVC.swift */,
+			);
+			path = FriendsFotoCollectionVC;
+			sourceTree = "<group>";
+		};
+		49ABE995286E5D7400274536 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				49ABE99A286E5E7000274536 /* UserStorage.swift */,
+				49ABE998286E5DAB00274536 /* GroupsStorage.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		49D2A30B286BBD8800129592 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				49D2A30C286BBDB400129592 /* MyGroupsCell.swift */,
+				49D2A30D286BBDB400129592 /* MyGroupsCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		49E7926C2856505800632D60 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				49E792712856519E00632D60 /* AuthorizationVC.swift */,
-				4921887C285F614900787FF2 /* FriendsVC.swift */,
-				4921887E285F61BC00787FF2 /* MyGroupsVC.swift */,
+				49F4950628678D9700BB7CB1 /* AuthorizationVC */,
+				49F4950728678DBA00BB7CB1 /* FriendsVC */,
+				49588908286E450D0044C6C3 /* FriendsFotoCollectionVC */,
+				49F4950828678DDD00BB7CB1 /* MyGroupsVC */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -54,6 +99,8 @@
 		49E7926D2856507C00632D60 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				49ABE991286E5AD000274536 /* UserModel.swift */,
+				49ABE993286E5CEB00274536 /* GroupModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -72,6 +119,41 @@
 				49F94DA728564DC500DB82D2 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		49F4950628678D9700BB7CB1 /* AuthorizationVC */ = {
+			isa = PBXGroup;
+			children = (
+				49E792712856519E00632D60 /* AuthorizationVC.swift */,
+			);
+			path = AuthorizationVC;
+			sourceTree = "<group>";
+		};
+		49F4950728678DBA00BB7CB1 /* FriendsVC */ = {
+			isa = PBXGroup;
+			children = (
+				4921887C285F614900787FF2 /* FriendsVC.swift */,
+				49F4950D286790AF00BB7CB1 /* Cells */,
+			);
+			path = FriendsVC;
+			sourceTree = "<group>";
+		};
+		49F4950828678DDD00BB7CB1 /* MyGroupsVC */ = {
+			isa = PBXGroup;
+			children = (
+				4921887E285F61BC00787FF2 /* MyGroupsVC.swift */,
+				49D2A30B286BBD8800129592 /* Cells */,
+			);
+			path = MyGroupsVC;
+			sourceTree = "<group>";
+		};
+		49F4950D286790AF00BB7CB1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				49F4950A28678E3700BB7CB1 /* FriendsCell.xib */,
+				49F4950928678E3700BB7CB1 /* FriendsCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		49F94D9028564DC500DB82D2 = {
@@ -93,6 +175,7 @@
 		49F94D9B28564DC500DB82D2 /* VKclient */ = {
 			isa = PBXGroup;
 			children = (
+				49ABE995286E5D7400274536 /* Repository */,
 				49E79270285650B400632D60 /* Storyboard */,
 				49E7926D2856507C00632D60 /* Models */,
 				49E7926E2856508400632D60 /* Views */,
@@ -164,8 +247,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				49F94DA928564DC500DB82D2 /* LaunchScreen.storyboard in Resources */,
+				49D2A30F286BBDB400129592 /* MyGroupsCell.xib in Resources */,
 				49F94DA628564DC500DB82D2 /* Assets.xcassets in Resources */,
 				49F94DA428564DC500DB82D2 /* Main.storyboard in Resources */,
+				49F4950C28678E3700BB7CB1 /* FriendsCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,10 +262,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				49F94D9D28564DC500DB82D2 /* AppDelegate.swift in Sources */,
+				49ABE994286E5CEB00274536 /* GroupModel.swift in Sources */,
+				4958890A286E45860044C6C3 /* FriendsFotoCollectionVC.swift in Sources */,
+				49F4950B28678E3700BB7CB1 /* FriendsCell.swift in Sources */,
 				4921887F285F61BC00787FF2 /* MyGroupsVC.swift in Sources */,
 				49F94D9F28564DC500DB82D2 /* SceneDelegate.swift in Sources */,
 				4921887D285F614900787FF2 /* FriendsVC.swift in Sources */,
 				49E792722856519E00632D60 /* AuthorizationVC.swift in Sources */,
+				49ABE99B286E5E7000274536 /* UserStorage.swift in Sources */,
+				49D2A30E286BBDB400129592 /* MyGroupsCell.swift in Sources */,
+				49ABE992286E5AD000274536 /* UserModel.swift in Sources */,
+				49ABE999286E5DAB00274536 /* GroupsStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
