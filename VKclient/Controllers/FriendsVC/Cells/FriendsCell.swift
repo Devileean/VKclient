@@ -2,22 +2,36 @@
 //  FriendsCell.swift
 //  VKclient
 //
-//  Created by Алексей Логинов on 25.06.2022.
+//  Created by Алексей Логинов on 04.07.2022.
 //
 
 import UIKit
 
 class FriendsCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+    @IBOutlet weak var avatarView: UIView!
+    @IBOutlet weak var userAvatarImage: UIImageView!
+        @IBOutlet weak var firstNameUser:   UILabel!
+        @IBOutlet weak var secondNameUser:  UILabel!
+        @IBOutlet weak var dateBornUser:    UILabel!
+        
+        
+        func configure(user: UserModel) {
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+        userAvatarImage.image = UIImage(named: user.userAvatar)
+        firstNameUser.text    = user.userFirstName
+        secondNameUser.text   = user.userSecondName
+        dateBornUser.text     = user.dateUserBorn
 
-        // Configure the view for the selected state
+            //backRoundView.backgroundColor = .lightGray
+        }
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        let cornerRadius = avatarView.frame.width / 2
+        
+        userAvatarImage.layer.cornerRadius = cornerRadius
+        userAvatarImage.clipsToBounds = true
     }
-    
+        
 }

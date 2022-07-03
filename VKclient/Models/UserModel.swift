@@ -12,16 +12,20 @@ class UserModel  {
     let userFirstName:       String
     let userSecondName:      String
     let userAvatar:          String
-    let userFotoCollection: [String]
+    let dateUserBorn:        String
+    //let userFotoCollection: [String]
     
     init(userFirstName:       String,
          userSecondName:      String,
          userAvatar:          String,
-         userFotoCollection: [String]) {
+         dateUserBorn:        String
+         //userFotoCollection: [String]
+    ) {
         
         self.userFirstName      = userFirstName
         self.userSecondName     = userSecondName
         self.userAvatar         = userAvatar
-        self.userFotoCollection = userFotoCollection
+        self.dateUserBorn       = dateUserBorn
+        //self.userFotoCollection = userFotoCollection
     }
 }

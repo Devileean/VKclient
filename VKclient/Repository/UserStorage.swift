@@ -11,39 +11,10 @@ class UserStorage {
     let users: [UserModel]
     
     init() {
-        users = [UserModel(userFirstName: "Брюс",     userSecondName: "Уиллис",     userAvatar: "", userFotoCollection: []),
-                 UserModel(userFirstName: "Мила",     userSecondName: "Йовович",    userAvatar: "", userFotoCollection: []),
-                 UserModel(userFirstName: "Арнольд",  userSecondName: "Шварцнегер", userAvatar: "", userFotoCollection: []),
-                 UserModel(userFirstName: "Анжелина", userSecondName: "Джоли",      userAvatar: "", userFotoCollection: []),
-                 UserModel(userFirstName: "Джим",     userSecondName: "Керри",          userAvatar: "", userFotoCollection: []),
-                 UserModel(userFirstName: "",         userSecondName: "", userAvatar: "", userFotoCollection: []),
-                 UserModel(userFirstName: "",         userSecondName: "", userAvatar: "", userFotoCollection: []),
-                 UserModel(userFirstName: "", userSecondName: "", userAvatar: "", userFotoCollection: []),
-                 UserModel(userFirstName: "", userSecondName: "", userAvatar: "", userFotoCollection: []),
-                 UserModel(userFirstName: "", userSecondName: "", userAvatar: "", userFotoCollection: []),
-                 UserModel(userFirstName: "", userSecondName: "", userAvatar: "", userFotoCollection: []),
-                 UserModel(userFirstName: "", userSecondName: "", userAvatar: "", userFotoCollection: []),
-                 UserModel(userFirstName: "", userSecondName: "", userAvatar: "", userFotoCollection: []),
-                 UserModel(userFirstName: "", userSecondName: "", userAvatar: "", userFotoCollection: []),
-                 UserModel(userFirstName: "", userSecondName: "", userAvatar: "", userFotoCollection: []),
-                 UserModel(userFirstName: "", userSecondName: "", userAvatar: "", userFotoCollection: []),
-                 UserModel(userFirstName: "", userSecondName: "", userAvatar: "", userFotoCollection: []),
-                 UserModel(userFirstName: "", userSecondName: "", userAvatar: "", userFotoCollection: []),
-                 UserModel(userFirstName: "", userSecondName: "", userAvatar: "", userFotoCollection: []),
-                 UserModel(userFirstName: "", userSecondName: "", userAvatar: "", userFotoCollection: []),
-                 UserModel(userFirstName: "", userSecondName: "", userAvatar: "", userFotoCollection: []),
-                 UserModel(userFirstName: "", userSecondName: "", userAvatar: "", userFotoCollection: []),
-                 UserModel(userFirstName: "", userSecondName: "", userAvatar: "", userFotoCollection: []),
-                 UserModel(userFirstName: "", userSecondName: "", userAvatar: "", userFotoCollection: []),
-                 UserModel(userFirstName: "", userSecondName: "", userAvatar: "", userFotoCollection: []),
-                 UserModel(userFirstName: "", userSecondName: "", userAvatar: "", userFotoCollection: []),
-                 UserModel(userFirstName: "", userSecondName: "", userAvatar: "", userFotoCollection: []),
-                 UserModel(userFirstName: "", userSecondName: "", userAvatar: "", userFotoCollection: []),
-                 UserModel(userFirstName: "", userSecondName: "", userAvatar: "", userFotoCollection: []),
-                 UserModel(userFirstName: "", userSecondName: "", userAvatar: "", userFotoCollection: []),
-                 UserModel(userFirstName: "", userSecondName: "", userAvatar: "", userFotoCollection: []),
-                 UserModel(userFirstName: "", userSecondName: "", userAvatar: "", userFotoCollection: []),
-                 UserModel(userFirstName: "", userSecondName: "", userAvatar: "", userFotoCollection: []),
+        users = [
+            UserModel(userFirstName: "Леонардо", userSecondName: "Ди Каприо", userAvatar: "leonardo", dateUserBorn: "11.11.1974"),
+            UserModel(userFirstName: "Сандра", userSecondName: "Буллок", userAvatar: "sandrabullock", dateUserBorn: "26.07.1964"),
+            UserModel(userFirstName: "Анджелина", userSecondName: "Джоли", userAvatar: "AnDgoli", dateUserBorn: "04.06.1975")
         ]
     }
 }
