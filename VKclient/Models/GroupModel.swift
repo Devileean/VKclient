@@ -8,5 +8,17 @@
 import Foundation
 
 class GroupModel {
+    let headerGroup      : String
+    let groupLogoImage   : String
+    let foundingDateGroup: String
     
+    init (
+          headerGroup      : String,
+          groupLogoImage   : String,
+          foundingDateGroup: String){
+            
+            self.headerGroup       = headerGroup
+            self.groupLogoImage    = groupLogoImage
+            self.foundingDateGroup = foundingDateGroup
+    }
 }

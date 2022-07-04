@@ -55,7 +55,18 @@ private func sortedForSection(_ users: [UserModel], firstLetters: [String]) -> [
 extension FriendsVC: UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
         friendsSection.count
-    }
+        }
+    
+//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//        let view = UIView.init(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 44))
+//        view.backgroundColor = .white
+//        return view
+//    }
+
+//    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+//        return CGFloat(firstLetters.count)
+//    }
+
 }
 
 
@@ -92,15 +103,13 @@ extension FriendsVC: UITableViewDataSource {
     
     // Вызовите метод willDisplayHeaderView в TableViewController классе
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-
     // Создаём константу, именна через неё мы будем обращаться к свойствам и изменять их
-    let header = view as! UITableViewHeaderFooterView
+    let header = view as! UITableViewHeaderFooterView //Footer
     // Установить цвет текста в label
     header.textLabel?.textColor = .white
     // Установить цвет фона для секции
     header.tintColor = #colorLiteral(red: 0.3077512383, green: 0.4815763831, blue: 0.7451851964, alpha: 1)
     // Установить шрифт и размер шрифта для label
-    header.textLabel?.font = UIFont(name: "Helvetica-Regular", size: 25)
-    
+   // header.textLabel?.font = UIFont(name: "Helvetica-Regular", size: 25)
     }
 }

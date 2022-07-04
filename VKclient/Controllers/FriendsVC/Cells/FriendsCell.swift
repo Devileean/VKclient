@@ -11,9 +11,9 @@ class FriendsCell: UITableViewCell {
 
     @IBOutlet weak var avatarView: UIView!
     @IBOutlet weak var userAvatarImage: UIImageView!
-        @IBOutlet weak var firstNameUser:   UILabel!
-        @IBOutlet weak var secondNameUser:  UILabel!
-        @IBOutlet weak var dateBornUser:    UILabel!
+    @IBOutlet weak var firstNameUser:   UILabel!
+    @IBOutlet weak var secondNameUser:  UILabel!
+    @IBOutlet weak var dateBornUser:    UILabel!
         
         
         func configure(user: UserModel) {

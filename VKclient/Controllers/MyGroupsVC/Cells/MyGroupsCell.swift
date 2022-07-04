@@ -9,21 +9,17 @@ import UIKit
 
 class MyGroupsCell: UITableViewCell {
 
-    @IBOutlet weak var groupNameLabel: UILabel!
-    @IBOutlet weak var groupLogoImage: UIImageView!
+    @IBOutlet weak var groupNameLabel:           UILabel!
+    @IBOutlet weak var groupLogoImage:           UIImageView!
     @IBOutlet weak var groupDescriptionTextView: UITextView!
+    @IBOutlet weak var foundingDateGroupLabel:   UILabel!
     
     
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+    func configure(groupFilling: GroupModel) {
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        groupLogoImage.image        = UIImage(named: groupFilling.groupLogoImage)
+        groupNameLabel.text         = groupFilling.headerGroup
+        foundingDateGroupLabel.text = groupFilling.foundingDateGroup
     }
-    
 }
