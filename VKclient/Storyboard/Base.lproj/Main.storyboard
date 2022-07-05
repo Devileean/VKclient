@@ -184,7 +184,7 @@
         <!--мои Группы-->
         <scene sceneID="cvm-ZU-MMj">
             <objects>
-                <viewController id="rP4-V8-0WL" customClass="MyGroupsVC" customModule="VKclient" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="myGroupsID" id="rP4-V8-0WL" customClass="MyGroupsVC" customModule="VKclient" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C01-QJ-9gb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -226,7 +226,7 @@
         <!--поиск Групп-->
         <scene sceneID="99n-Az-b5w">
             <objects>
-                <viewController id="R7f-ve-ILo" sceneMemberID="viewController">
+                <viewController id="R7f-ve-ILo" customClass="NewGroupsVC" customModule="VKclient" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FLl-NV-MDH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -253,6 +253,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="поиск Групп" id="X31-1s-Cvb"/>
+                    <connections>
+                        <outlet property="newGroupsTableView" destination="Urv-2E-ojw" id="nEU-Sp-dMt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xrD-AU-PQx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
