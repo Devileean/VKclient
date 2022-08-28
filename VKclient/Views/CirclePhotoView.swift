@@ -29,6 +29,9 @@ class CirclePhotoView: UIView {
         layer.shadowOffset = CGSize(width: 5.0, height: 5.0)
         layer.shadowRadius = 25.0
         layer.shadowOpacity = 1.0
+        //рамка
+        layer.borderColor = UIColor.white.cgColor
+        layer.borderWidth = 2.0
     }
     
 }
