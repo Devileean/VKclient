@@ -98,7 +98,7 @@ extension FriendsVC: UITableViewDataSource {
     // Установить цвет текста в label
     header.textLabel?.textColor = .white
     // Установить цвет фона для секции
-        header.tintColor =  #colorLiteral(red: 0.3077512383, green: 0.4815763831, blue: 0.7451851964, alpha: 1)
+    header.tintColor =  #colorLiteral(red: 0.3077512383, green: 0.4815763831, blue: 0.7451851964, alpha: 1)
     // Установить шрифт и размер шрифта для label
    // header.textLabel?.font = UIFont(name: "Helvetica-Regular", size: 25)
     }

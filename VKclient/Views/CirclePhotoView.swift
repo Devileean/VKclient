@@ -25,7 +25,7 @@ class CirclePhotoView: UIView {
         
         
         layer.cornerRadius = cornerRadius
-        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowColor = #colorLiteral(red: 0.3077512383, green: 0.4815763831, blue: 0.7451851964, alpha: 1)
         layer.shadowOffset = CGSize(width: 5.0, height: 5.0)
         layer.shadowRadius = 25.0
         layer.shadowOpacity = 1.0
