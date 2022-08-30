@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="110" id="KGk-i7-Jjw" customClass="MyGroupsCell" customModule="VKclient" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="myGroupsID" selectionStyle="default" indentationWidth="10" rowHeight="110" id="KGk-i7-Jjw" customClass="MyGroupsCell" customModule="VKclient" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="525" height="110"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -60,7 +60,7 @@
                             <constraint firstItem="5Eg-Nf-3Xc" firstAttribute="leading" secondItem="gR8-uV-SRg" secondAttribute="trailing" constant="8" id="48k-ev-iQI"/>
                             <constraint firstItem="mwi-hg-KOm" firstAttribute="top" secondItem="2sW-xh-eEe" secondAttribute="top" constant="12" id="79N-ae-wAL"/>
                             <constraint firstAttribute="trailing" secondItem="5Eg-Nf-3Xc" secondAttribute="trailing" constant="4" id="G5I-Rw-G9d"/>
-                            <constraint firstItem="5Eg-Nf-3Xc" firstAttribute="top" secondItem="2sW-xh-eEe" secondAttribute="top" constant="4" id="IkQ-TS-u4Z"/>
+                            <constraint firstItem="5Eg-Nf-3Xc" firstAttribute="top" secondItem="2sW-xh-eEe" secondAttribute="top" priority="999" constant="4" id="IkQ-TS-u4Z"/>
                             <constraint firstAttribute="bottom" secondItem="gR8-uV-SRg" secondAttribute="bottom" constant="4" id="KUR-RQ-nZA"/>
                             <constraint firstAttribute="height" constant="110" id="SAb-fk-Mk8"/>
                             <constraint firstItem="5Eg-Nf-3Xc" firstAttribute="leading" secondItem="mwi-hg-KOm" secondAttribute="trailing" constant="8" id="WlD-On-wuR"/>
@@ -72,7 +72,7 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="2sW-xh-eEe" secondAttribute="bottom" id="8zb-r1-WsN"/>
+                    <constraint firstAttribute="bottom" secondItem="2sW-xh-eEe" secondAttribute="bottom" priority="999" id="8zb-r1-WsN"/>
                     <constraint firstAttribute="trailing" secondItem="2sW-xh-eEe" secondAttribute="trailing" id="Op6-72-cLu"/>
                     <constraint firstItem="2sW-xh-eEe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="SAR-DC-q2A"/>
                     <constraint firstItem="2sW-xh-eEe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="iPu-ii-8KG"/>

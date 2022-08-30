@@ -13,10 +13,6 @@ class NewGroupsVC: UIViewController {
     
     var newGroups: [GroupModel] = []
     
-    
-    
-    
-    
     @IBOutlet weak var newGroupsTableView: UITableView!
     
     override func viewDidLoad() {
@@ -28,7 +24,7 @@ class NewGroupsVC: UIViewController {
         newGroupsTableView.delegate = self
         newGroupsTableView.dataSource = self
         
-        newGroupsTableView.register(UINib(nibName: "NewGroupCell", bundle: nil), forCellReuseIdentifier: "NewGroupID")
+        newGroupsTableView.register(UINib(nibName: "NewGroupCell", bundle: nil), forCellReuseIdentifier: "newGroupsID")
 
     }
 
@@ -49,7 +45,7 @@ extension NewGroupsVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard
-            let cell = tableView.dequeueReusableCell(withIdentifier: "NewGroupID", for: indexPath) as? NewGroupCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "newGroupsID", for: indexPath) as? NewGroupCell
         else {
             return UITableViewCell()
         }

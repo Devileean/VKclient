@@ -8,7 +8,9 @@
 import UIKit
 
 class NewGroupCell: UITableViewCell {
+ 
 
+    
     @IBOutlet weak var groupNameLabel:           UILabel!
     @IBOutlet weak var groupLogoImage:           UIImageView!
     @IBOutlet weak var groupDescriptionTextView: UITextView!
